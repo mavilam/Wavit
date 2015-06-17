@@ -1,0 +1,444 @@
+body {
+  background-color: #a3e0be;
+  color: #033423;
+  background-image: url("/pattern.png");
+  background-repeat: repeat;
+  text-align: center;
+
+}
+
+.navbar .nav>li>a{
+  font-size: 150.0%;
+}
+
+.navbar-nav{
+	cursor: pointer;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+	color:#a3e0be;
+}
+
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-nav>.active>a:focus{
+	color: #033423;
+	border-radius: 6px;
+	background-color:#a3e0be;
+}
+
+.navbar-inverse{
+	background-color: #033423;
+	border-color: #0D5E43;
+}
+
+#localVideo, #remoteVideo{
+	background-color: rgba(3,52,35,0.8);
+	border-style: solid;
+	border-top-width: 1px ;
+	border-color: rgba(3,52,35,0.8);
+	border-width: 3px;
+	border-radius: 3px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.btn{
+	font-size: 92.3%;
+}
+
+.btn-primary{
+	background-color: #1B3F63;
+}
+
+p{
+  color: #033423;
+  font-weight: bold;
+  font-size: 100.0%;
+}
+
+#msg{
+  font-size: 109.0%;
+  margin-right: 20px;
+}
+
+#localVideo{
+	width: 90%;
+	height: 50%;
+  margin-right: 20px;
+}
+
+#remoteVideo{
+  width: 100%;
+  height: 65%;
+  max-width: 536px;
+  max-height: 423px;
+}
+
+#subtitles {
+	font: caption;
+	color: white;
+	text-shadow: 1px 1px 0 black, -1px -1px black, 1px -1px black, -1px 1px black, 0 1px black, 1px 0 black, -1px 0 black, 0 -1px black;
+	text-align: center;
+	position: relative;
+	bottom: 70px;
+  font-size: 150.0%;
+}
+
+.btn-danger, .btn-danger:hover, .btn-danger:focus, .btn-danger.focus
+{
+    width: 90%;
+    background-color:  #7E0000;
+}
+
+.btn-warning, .btn-warning:hover, .btn-warning:focus, .btn-warning.focus
+{
+    width: 90%;
+    background-color:  #1B3F63;
+}
+
+
+#talk
+{
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+
+}
+
+#local, #remoto{
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-color: #a3e0be;
+  border-color: #033423;
+  padding-left: 30px;
+  box-shadow: 7px 8px 3px -3px rgba(0,0,0,0.73);
+  padding-top: 9px;
+}
+
+#remoto{
+  padding-bottom: 3px;
+}
+
+#selectLang{
+  width: 90%;
+}
+
+#langTitle{
+  color: #ffffff;
+  font-size: 100.0%;
+}
+.alert-success{
+  background-color: #075B3D ;
+}
+
+.jumbotron{
+  background-color: #a3e0be;
+}
+
+.text-muted {
+  margin-top: 10px;
+  color: #033423;
+
+}
+
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus{
+  background-color: #a3e0be;
+}
+
+.navbar-brand{
+  font-size: 162.5%
+}
+
+
+/* ----------- Size like iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    #remoteVideo{
+      width: 100%;
+      height: 75%;
+    }
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+    #remoteVideo{
+      width: 100%;
+      height: 75%;
+    }
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+    #remoteVideo{
+      width: 100%;
+      height: 75%;
+    }
+
+}
+
+/* ----------- Size like iPhone 5 and 5S ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    #remoteVideo{
+      width: 100%;
+      height: 75%;
+    }
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+    #remoteVideo{
+      width: 100%;
+      height: 75%;
+    }
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+    #remoteVideo{
+      width: 100%;
+      height: 75%;
+    }
+
+}
+
+/* ----------- Size like iPhone 6 ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    #remoteVideo{
+      width: 100%;
+      height: 75%;
+    }
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+    #remoteVideo{
+      width: 100%;
+      height: 75%;
+    }
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+    #remoteVideo{
+      width: 100%;
+      height: 75%;
+    }
+
+}
+
+/* -----------  Size like iPhone 6+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+
+    #remoteVideo{
+      width: 100%;
+      height: 75%;
+    }
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+
+    #remoteVideo{
+      width: 100%;
+      height: 75%;
+    }
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+
+    #remoteVideo{
+      width: 100%;
+      height: 75%;
+    }
+
+}
+
+/* ----------- iPad mini ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    #remoteVideo{
+      width: 100%;
+      height: 75%;
+    }
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    #remoteVideo{
+      width: 100%;
+      height: 75%;
+    }
+
+}
+
+/* ----------- iPad 1 and 2 ----------- */
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    #remoteVideo{
+      width: 100%;
+      height: 75%;
+    }
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    #remoteVideo{
+      width: 100%;
+      height: 75%;
+    }
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    #remoteVideo{
+      width: 100%;
+      height: 75%;
+    }
+
+}
+
+/* ----------- iPad 3 and 4 ----------- */
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    #remoteVideo{
+      width: 100%;
+      height: 75%;
+    }
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    #remoteVideo{
+      width: 100%;
+      height: 75%;
+    }
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    #remoteVideo{
+      width: 100%;
+      height: 75%;
+    }
+
+}

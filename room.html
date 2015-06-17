@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta name='description' content='Cliente VideoChat' />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<script type="text/javascript" src='/socket.io/socket.io.js'></script>
+		<script type="text/javascript" src='js/lib/adapter.js'></script>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.black.css"/>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<title>Wavit</title>
+
+	</head>
+
+	<body>
+
+		<nav class="navbar navbar-inverse">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#">Wavit</a>
+		    </div>
+
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+		      <ul class="nav navbar-nav">
+				<li><a id="endComunication" title="Abandonar la comunicación en esta sala" >Abandonar la sala</a></li>
+		      </ul>
+
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a id="info" title="Información adicional sobre la aplicación" href="about.html">Info</a></li>
+
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+		<div class="container">
+			<div class="row">
+				<div id="local" class="col-md-3 col-md-offset-1 col-xs-12 ">
+					<div>
+		    			<span id="localtag" class="label label-default col-md-11 col-xs-11 col-sm-11 "></span>
+		    		</div>
+		    		<video id='localVideo' alt="Local video" autoplay muted></video>
+						<div>
+							<p id="msg"></p>
+						</div>
+		    		<div id="record" >
+		    			<div id="clickTalk">
+		    				<button id="talk" class="btn btn-lg btn-danger btn-block" alt="Espera a que este listo el otro usuario">Espera a tu compañero</danger>
+		    			</div>
+		    			<br/>
+		    		</div>
+
+			    	<div id="selectLang">
+						<div class="alert alert-success " role="alert">
+
+						<label for="langOptions" alt="Idioma que vas a hablar" id="langTitle" >Tu idioma es:</label>
+							<select id="langOptions" class="form-control" title="Selecciona un idioma">
+								<optgroup label="Lenguaje hablado">
+								<option value="es">Español</option>
+						    	<option value="de">Deutsch</option>
+				             	<option value="en">English</option>
+			                	<option value="fr">Français</option>
+			                	<option value="it">Italiano</option>
+			                	<option value="hu">Magyar</option>
+				               	<option value="no">Norsk</option>
+			                	<option value="pl">Polski</option>
+			                	<option value="pt">Português</option>
+			                	<option value="sv">Svenska</option>
+				               	<option value="ar">العربية</option>
+			                	<option value="cmn">中文</option>
+			                	<option value="he">עברית</option>
+				               	<option value="ja">日本語</option>
+				                <option value="ko">한국어</option>
+				                <option value="ru">Pусский</option>
+							</select>
+						</div>
+		  			</div>
+
+
+		  		</div>
+		  		<div id="remoto" class="col-md-6 col-md-offset-1 col-xs-12 ">
+		  			<div>
+		    			<span id="remotetag" class="label label-default col-md-12 col-xs-12 col-sm-12 col-md-offset-0">...</span>
+		    		</div>
+		  			<video id="remoteVideo" alt="Remote video"  autoplay></video>
+		  		<div id= "subtitles"></div>
+		  		<div id="control">
+		  			<div class="col-md-6 col-xs-12"  >
+		  				<button id="subtitle" data-original-title="Subtitulos desactivados" data-placement="top" data-toggle="tooltip" class="btn btn-lg btn-default btn-block" id="goButton" alt="Boton para entrar">Pulsa para subtitular</button>
+		  			</div>
+		  			<div class="col-md-6 col-xs-12"   >
+		  				<button id="utterance" data-original-title="Reproducción de habla desactivada" data-placement="top" data-toggle="tooltip" class="btn btn-lg btn-default btn-block" id="goButton" alt="Boton para entrar">Activa reproductor de voz</button>
+		  			</div>
+
+
+		  		</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="container">
+				<p class="text-muted">Wavit - URJC - 2015</p>
+			</div>
+		</footer>
+
+		<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src='js/main.js'></script>
+
+	</body>
+</html>

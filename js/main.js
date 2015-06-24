@@ -121,15 +121,6 @@ socket.on('end',function(message){
   hangup();
 });
 
-/*socket.on('middletranslation', function (message){
-    console.log("from " + message.from + " to " + message.to);
-  sendMessage({
-          type: 'translate',
-          from: message.from,
-          to: langSelected,
-          text: message.text}
-        );
-});*/
 
 socket.on('translation', function (message){
   console.log("trans " + message.text);
@@ -586,23 +577,6 @@ function goOutFromRoom(){
   out = true;
 }
 
-/*selectEvent.addEventListener("click", selectRequest, false);
-var isLanguagesVisible = false;
-
-function selectRequest(){
-
-  if(isLanguagesVisible){
-    options.style.visibility='hidden';
-    isLanguagesVisible = false;
-
-  }else{
-
-    isLanguagesVisible = true;
-    options.style.visibility='visible';
-
-  }
-  changeTextLanguages(langSelected);
-}*/
 
 ////////////////////////CHANGE THE TEXTS /////////////////
 
